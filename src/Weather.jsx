@@ -11,6 +11,7 @@ const Weather = () => {
 
     const fetchData = async(name) => {
         try {
+            setIsLoading(true);
             const response = await axios.get("https://api.weatherapi.com/v1/current.json", {
                 params : {
                     Key: "dd0838cb30e54d69bb4140843232710",
@@ -30,7 +31,6 @@ const Weather = () => {
     };
 
     const handleSearch = () => {
-        setIsLoading(true);
         setIsVisible(false);
         fetchData(cityName)
     };
