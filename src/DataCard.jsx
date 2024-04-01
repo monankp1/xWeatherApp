@@ -26,7 +26,7 @@ const DataCard = (prop) => {
 
   return (
     <div style={containerStyle}>
-        <div style={cardStyle} className='weather-cards'>
+        <div style={cardStyle} className='weather-card'>
             <h5>{prop.name}</h5>
             <p>{prop.info}</p>
         </div>
