@@ -59,7 +59,7 @@ const Weather = () => {
     
   return (
     <div style={{background: "#D3FCF9", height: '100vh'}}>
-        <input onChange={(e) => setCityName(e.target.value)} placeholder='Enter city name' style={searchBoxStyle}/>
+        <input type='text' onChange={(e) => setCityName(e.target.value)} placeholder='Enter city name' style={searchBoxStyle}/>
         <button onClick={handleSearch} style={buttonStyle}>Search</button>
         <br />
 
